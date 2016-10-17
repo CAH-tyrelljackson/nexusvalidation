@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
  
   <name>Maven Quick Start Archetype</name>
-  <url>http://repo.cahcommtech.com/content/groups/internal</url>
+  <url>http://maven.apache.org</url>
  
   <dependencies>
     <dependency>
