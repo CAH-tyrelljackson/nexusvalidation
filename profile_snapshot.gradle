@@ -1,0 +1,4 @@
+ext {
+    corporateRepoPath = "/content/repositories/commtech-snapshots/"
+    snapshot = "-SNAPSHOT"
+}
