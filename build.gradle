@@ -1,4 +1,4 @@
-sif (project.hasProperty('release')) {
+if (project.hasProperty('release')) {
     apply from: 'profile_release.gradle'
 } else {
     apply from: 'profile_snapshot.gradle'
