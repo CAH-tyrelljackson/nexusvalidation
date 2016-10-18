@@ -51,9 +51,9 @@ allprojects {
     publishing {
         publications {
             maven(MavenPublication) {
-                groupId "repo.cahcommtech.com"
+                groupId "${project.group}"
                 artifactId "nexusvalidation"
-                version "1.0"
+                version "${project.version}"
                 artifact sourceJar { classifier "sources" }
                 from components.java
             }
