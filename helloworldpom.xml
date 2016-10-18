@@ -6,6 +6,19 @@
   <artifactId>nexusvalidation</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
+  
+  <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>External Releases</name>
+            <url>http://repo.cahcommtech.com/content/groups/internal/NV</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>External Snapshots</name>
+            <url>http://repo.cahcommtech.com/content/groups/internal/NV-SNAPSHOTS</url>
+        </snapshotRepository>
+    </distributionManagement>
  
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>
