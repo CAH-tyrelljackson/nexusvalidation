@@ -1,4 +1,4 @@
-if (project.hasProperty('release')) {
+sif (project.hasProperty('release')) {
     apply from: 'profile_release.gradle'
 } else {
     apply from: 'profile_snapshot.gradle'
@@ -51,9 +51,9 @@ allprojects {
     publishing {
         publications {
             maven(MavenPublication) {
-                groupId "${project.group}"
-                artifactId "${project.name}"
-                version "${project.version}"
+                groupId "repo.cahcommtech.com"
+                artifactId "nexusvalidation"
+                version "1.0"
                 artifact sourceJar { classifier "sources" }
                 from components.java
             }
