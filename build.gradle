@@ -25,6 +25,7 @@ buildscript {
 
 allprojects {
     group 'com.cardinalhealth.fuse'
+    name 'nexusvalidation'
     version "${versionNumber}${snapshot}"
  
     repositories {
@@ -52,7 +53,7 @@ allprojects {
         publications {
             maven(MavenPublication) {
                 groupId "${project.group}"
-                artifactId "nexusvalidation"
+                artifactId "${project.name}"
                 version "${project.version}"
                 artifact sourceJar { classifier "sources" }
                 from components.java
